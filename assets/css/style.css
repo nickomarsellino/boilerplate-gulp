@@ -1,0 +1,21 @@
+body {
+  background-color: salmon; }
+
+.box {
+  background-color: lightcoral;
+  width: 400px;
+  height: 400px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -webkit-transition: all ease-in-out 0.5ms;
+  -o-transition: all ease-in-out 0.5ms;
+  -moz-transition: all ease-in-out 0.5ms;
+  transition: all ease-in-out 0.5ms; }
+
+/*# sourceMappingURL=maps/style.css.map */

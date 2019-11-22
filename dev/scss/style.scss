@@ -1,5 +1,10 @@
 body{
-	background-color: salmon;
+	margin: 0 auto;
+	padding: 0 auto;
+	background-color: whitesmoke;
 }
 
+
 @import './components/index';
+@import './organism/index';
+

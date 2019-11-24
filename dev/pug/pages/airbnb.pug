@@ -1,9 +1,13 @@
 extends ../template.pug
 
 block head
-    -
-        titlePage = 'AirBnb';
+  -
+    titlePage = 'AirBnb';
 
 block body 
-    .p-airbnb
-        h2 Air Bnb Card
+  .p-airbnb
+    h2 Air Bnb Card
+    .container
+      .wrapper-card-list
+        include ../components/detail-card-review.pug 
+      P TEST 

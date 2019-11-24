@@ -1,2 +1,12 @@
+.p-airbnb .container {
+  width: 100%;
+  max-width: 1120px;
+  margin: auto; }
+
+.p-airbnb .wrapper-card-list {
+  margin-left: -10px;
+  margin-right: -10px;
+  clear: both;
+  overflow: auto; }
 
 /*# sourceMappingURL=../maps/pages/index.css.map */

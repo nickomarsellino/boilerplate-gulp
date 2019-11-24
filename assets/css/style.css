@@ -1,15 +1,70 @@
-body {
-  margin: 0 auto;
-  padding: 0 auto;
-  background-color: whitesmoke; }
+.c-detail-card-review {
+  float: left;
+  box-sizing: border-box;
+  width: 33.33%;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 455px; }
+  .c-detail-card-review .card-content {
+    margin: 16px 0; }
+    .c-detail-card-review .card-content:first-child {
+      margin-top: 0; }
+    .c-detail-card-review .card-content .card-image {
+      height: 250px;
+      border-radius: 2px;
+      background-size: cover;
+      background-position: cover; }
+    .c-detail-card-review .card-content .card-ratings .fa {
+      margin: 0 4px; }
+      .c-detail-card-review .card-content .card-ratings .fa:first-child {
+        margin-left: 0; }
+    .c-detail-card-review .card-content .card-ratings .checked {
+      color: cadetblue; }
+    .c-detail-card-review .card-content .card-description {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-height: 37px;
+      padding-right: 10px; }
+  .c-detail-card-review .card-user-detail .user-profile {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    float: left;
+    margin-right: 10px; }
+  .c-detail-card-review .card-user-detail .user-wrapper {
+    display: inline-block;
+    max-width: 200px;
+    padding: 5px; }
+    .c-detail-card-review .card-user-detail .user-wrapper .user-name {
+      margin-bottom: 5px; }
 
 .o-header {
-  background-color: skyblue; }
+  background-color: skyblue;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; }
 
 .o-footer {
   width: 100%;
   position: fixed;
   bottom: 0;
   background-color: skyblue; }
+
+.p-airbnb .container {
+  width: 100%;
+  max-width: 1120px;
+  margin: auto; }
+
+.p-airbnb .wrapper-card-list {
+  margin-left: -10px;
+  margin-right: -10px;
+  clear: both;
+  overflow: auto; }
+
+body {
+  font-family: "Open Sans";
+  background-color: whitesmoke; }
 
 /*# sourceMappingURL=maps/style.css.map */

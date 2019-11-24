@@ -4,15 +4,22 @@ html
 
   head
     meta(charset='utf-8')/
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')/
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')/
     title #{titlePage}: Practice FED
-    link(rel='stylesheet', type='text/css', href='assets/css/style.min.css')/
-    //- script(rel='stylesheet', type='text/css', src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css")
+    //- for rating icon
+    link(rel='stylesheet' type='text/css' href='assets/css/style.min.css')/
+    //- for normalize
+    link(rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css')/
+    //- for google font
+    link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans')/
+
+    link(rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')/
+
+    //- link(rel='stylesheet' type='text/css' href='https://unpkg.com/@csstools/normalize.css')/
+    //- script(rel='stylesheet' type='text/css' src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css")
 
   body.template
 
-    include components/header.pug
+    include organism/header.pug
 
     block body
-
-    include components/footer.pug 

@@ -4,6 +4,7 @@
   "description": "practice-fed",
   "main": "gulpfile.js",
   "dependencies": {
+    "@csstools/normalize.css": "^10.1.0",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",

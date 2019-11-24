@@ -1,0 +1,57 @@
+.c-detail-card-review {
+  float: left;
+  box-sizing: border-box;
+  width: 33.33%;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 455px;
+  // background-color: royalblue;
+  .card-content {
+    margin: 16px 0;
+    &:first-child {
+      margin-top: 0;
+    }
+    .card-image {
+      height: 250px;
+      border-radius: 2px;
+      background-size: cover;
+      background-position: cover;
+    }
+    .card-ratings {
+      .fa {
+        margin: 0 4px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+      .checked {
+        color: cadetblue;
+      }
+    }
+    .card-description {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-height: 37px;
+      padding-right: 10px;
+    }
+  }
+  .card-user-detail {
+    .user-profile {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background-position: center;
+      background-size: cover;
+      float: left;
+      margin-right: 10px;
+    }
+    .user-wrapper {
+      display: inline-block;
+      max-width: 200px;
+      padding: 5px;
+      .user-name{
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

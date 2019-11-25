@@ -1,0 +1,11 @@
+extends ../template.pug
+
+block head
+  -
+    titlePage = 'Traveloka';
+
+block body 
+  .p-traveloka
+    .container
+      .wrapper-card-list
+        include ../components/recomended-hotel-card.pug

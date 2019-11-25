@@ -40,6 +40,70 @@
     .c-detail-card-review .card-user-detail .user-wrapper .user-name {
       margin-bottom: 5px; }
 
+* {
+  box-sizing: border-box; }
+
+.c-recomended-hotel-card {
+  float: left;
+  width: 33.33%;
+  padding: 0 10px; }
+  .c-recomended-hotel-card .card-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 180px;
+    border-radius: 10px; }
+    .c-recomended-hotel-card .card-wrapper:hover .view-more-button {
+      opacity: 1;
+      bottom: 30px;
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+    .c-recomended-hotel-card .card-wrapper:hover .hotel-information {
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      background-color: rgba(0, 0, 0, 0.7); }
+  .c-recomended-hotel-card img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px; }
+  .c-recomended-hotel-card .click-area {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    text-indent: -99999px; }
+  .c-recomended-hotel-card .hotel-information {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    background-color: rgba(0, 0, 0, 0.4); }
+    .c-recomended-hotel-card .hotel-information .hotel-origin {
+      font-weight: 700;
+      margin: 0;
+      margin-bottom: 5px; }
+    .c-recomended-hotel-card .hotel-information .hotel-availability {
+      font-weight: 300;
+      margin: 0; }
+  .c-recomended-hotel-card .view-more-button {
+    position: absolute;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    bottom: -45px;
+    width: 70%;
+    left: 50px;
+    padding: 10px 20px;
+    border: 1px white solid;
+    background: transparent;
+    color: white;
+    opacity: 0; }
+
 .o-header {
   background-color: skyblue;
   position: -webkit-sticky;
@@ -52,10 +116,13 @@
   bottom: 0;
   background-color: skyblue; }
 
-.p-airbnb .container {
+.container {
   width: 100%;
   max-width: 1120px;
   margin: auto; }
+
+.pages-list-link .list-link {
+  margin-bottom: 10px; }
 
 .p-airbnb .wrapper-card-list {
   margin-left: -10px;
@@ -63,8 +130,11 @@
   clear: both;
   overflow: auto; }
 
+.p-traveloka .container {
+  max-width: 1000px; }
+
 body {
-  font-family: "Open Sans";
+  font-family: 'Roboto', sans-serif;
   background-color: whitesmoke; }
 
 /*# sourceMappingURL=maps/style.css.map */

@@ -1,75 +1,22 @@
-.c-detail-card-review
-  .card-content
-    .card-image(style='background-image: url(./assets/images/hotel-1.jpg);')
-  .card-content
-    .card-ratings
-      span.fa.fa-star.checked
-      span.fa.fa-star.checked
-      span.fa.fa-star.checked
-      span.fa.fa-star
-      span.fa.fa-star
-  .card-content
-    .card-description Very friendly people, everything went very well.  I really enjoyed my stay! All the best from Josef
-  .card-user-detail
-    .user-profile(style='background-image: url(./assets/images/ava-1.jpg);')
-    .user-wrapper
-      .user-name Jaden Smith
-      .user-state United State
-
-//- Another Card
-.c-detail-card-review
-  .card-content
-    .card-image(style='background-image: url(./assets/images/hotel-2.jpg);')
-  .card-content
-    .card-ratings
-      span.fa.fa-star.checked
-      span.fa.fa-star.checked
-      span.fa.fa-star.checked
-      span.fa.fa-star.checked
-      span.fa.fa-star.checked
-  .card-content
-    .card-description Wow! What a magical place. The stars, the hot tub, the peace of the desert; it was a great end to our honeymoon.  I really would love to come back and spend a few more days here.  Everything I could need was provided, the house was clean and roomy, and I loved the way the house was laid out. I told my new wife that I wouldn't mind living in house just like it. It was the desert though that stole the show. Setting in the hot tub, talking to my wife, and looking up at STARS was amazing. I wanted to stay up all night and just take in everything, but regrettably had a long drive back to Oklahoma the next day. I highly recommend a stay here and I suggest that you stay for a few days if able. If you love nature, peace, and sharing a night with those near and dear to you, you couldn't hope for a better place than Joshua Tree 1954 Homestead. Thank you Leafe & Katherine. :) 
-  .card-user-detail
-    .user-profile(style='background-image: url(./assets/images/ava-2.jpeg);')
-    .user-wrapper
-      .user-name A$AP Rocky
-      .user-state United State
-
-//- Another Card
-.c-detail-card-review
-  .card-content
-    .card-image(style='background-image: url(./assets/images/hotel-2.jpg);')
-  .card-content
-    .card-ratings
-      span.fa.fa-star.checked
-      span.fa.fa-star.checked
-      span.fa.fa-star.checked
-      span.fa.fa-star.checked
-      span.fa.fa-star
-  .card-content
-    .card-description We came in late at night and left in the morning. Stewart was very friendly and helpful in telling us about getting around town. This is a great location in Boulder, access to a lot on foot. He also made us feel comfortable using the kitchen, bathroom, whatever! Thanks, Stewart
-  .card-user-detail
-    .user-profile(style='background-image: url(./assets/images/ava-3.jpeg);')
-    .user-wrapper
-      .user-name Lil Uzi Vert
-      .user-state United State
-
-//- Another Card
-.c-detail-card-review
-  .card-content
-    .card-image(style='background-image: url(./assets/images/hotel-2.jpg);')
-  .card-content
-    .card-ratings
-      span.fa.fa-star.checked
-      span.fa.fa-star.checked
-      span.fa.fa-star.checked
-      span.fa.fa-star.checked
-      span.fa.fa-star
-  .card-content
-    .card-description We came in late at night and left in the morning. Stewart was very friendly and helpful in telling us about getting around town. This is a great location in Boulder, access to a lot on foot. He also made us feel comfortable using the kitchen, bathroom, whatever! Thanks, Stewart
-  .card-user-detail
-    .user-profile(style='background-image: url(./assets/images/ava-3.jpeg);')
-    .user-wrapper
-      .user-name Lil Uzi Vert
-      .user-state United State
-
+each val in listData
+  //- .list
+  //-   img(src='assets/images/'+val.image)/
+  //-   h1.title !{val.title}
+  .c-detail-card-review
+    .card-content
+      .card-image(style='background-image: url(./assets/images/'+val.cardImage+');')
+    .card-content
+      .card-ratings
+        - for (var col = 1; col <= 5; col++)
+          //- each v in [1,2,3,4,5]
+          if col <= val.ratings
+            span.fa.fa-star.checked
+          else
+            span.fa.fa-star
+    .card-content
+      .card-description !{val.description}
+    .card-user-detail
+      .user-profile(style='background-image: url(./assets/images/'+val.userProfile+');')
+      .user-wrapper
+        .user-name !{val.userName}
+        .user-state !{val.userState}

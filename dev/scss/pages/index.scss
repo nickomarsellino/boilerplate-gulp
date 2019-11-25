@@ -1,3 +1,13 @@
-@import 
-'airbnb',
-'traveloka';
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: auto;
+}
+
+.pages-list-link{
+  .list-link{
+    margin-bottom: 10px;
+  }
+}
+
+@import "airbnb", "traveloka";

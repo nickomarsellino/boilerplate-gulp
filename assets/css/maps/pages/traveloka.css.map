@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"../../pages/traveloka.css","sourcesContent":[]}
+{"version":3,"sources":["pages/traveloka.scss"],"names":[],"mappings":"AAAA;EAEQ,iBAAiB,EAAA","file":"../../pages/traveloka.css","sourcesContent":[".p-traveloka{\n    .container{\n        max-width: 1000px;\n    }\n}"]}

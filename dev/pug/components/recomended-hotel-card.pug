@@ -1,10 +1,12 @@
-.c-recomended-hotel-card
-  .card-wrapper
-    img(src="./assets/images/country-4.jpeg" alt="Image Title")/
-    a.click-area(href='https://google.com') Brazil
-    .hotel-information
-      h3.hotel-origin Brazil
-      p.hotel-availability 15894 available hotels
-    button.view-more-button See available hotels
+each val in listData
+  .c-recomended-hotel-card
+    .card-wrapper
+      - var imgsrc =  "./assets/images/"
+      img(src=imgsrc + val.cardImage alt=val.hotelOrigin)/
+      a.click-area(href='https://google.com') Brazil
+      .hotel-information
+        h3.hotel-origin !{val.hotelOrigin}
+        p.hotel-availability !{val.availability} available hotels
+      button.view-more-button See available hotels
 
   

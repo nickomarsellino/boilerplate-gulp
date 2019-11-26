@@ -5,7 +5,7 @@
 .c-recomended-hotel-card {
   float: left;
   width: 33.33%;
-  padding: 0 10px;
+  padding: 10px 10px;
   .card-wrapper {
     position: relative;
     overflow: hidden;
@@ -14,7 +14,9 @@
     &:hover {
       .view-more-button {
         opacity: 1;
-        bottom: 30px;
+        // bottom: 30px;
+        // transform: translate(-50%, 20%);
+        transform: translate(-50%, -70%);
         transition: all 0.4s ease;
       }
       .hotel-information {
@@ -26,14 +28,14 @@
   img {
     height: 100%;
     width: 100%;
-    border-radius: 10px;
+    object-fit: cover;
   }
   .click-area {
     position: absolute;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
+    height: 100%;
+    width: 100%;
     z-index: 2;
     text-indent: -99999px;
   }
@@ -60,9 +62,11 @@
   .view-more-button {
     position: absolute;
     transition: all 0.4s ease;
-    bottom: -45px;
     width: 70%;
-    left: 50px;
+    left: 50%;
+    bottom: 0;
+    // transform: translateX(-50%);
+    transform: translate(-50%,-40%);
     padding: 10px 20px;
     border: 1px white solid;
     background: transparent;

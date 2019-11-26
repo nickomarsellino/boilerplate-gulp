@@ -4,7 +4,7 @@
 .c-recomended-hotel-card {
   float: left;
   width: 33.33%;
-  padding: 0 10px; }
+  padding: 10px 10px; }
   .c-recomended-hotel-card .card-wrapper {
     position: relative;
     overflow: hidden;
@@ -12,7 +12,8 @@
     border-radius: 10px; }
     .c-recomended-hotel-card .card-wrapper:hover .view-more-button {
       opacity: 1;
-      bottom: 30px;
+      -webkit-transform: translate(-50%, -70%);
+      transform: translate(-50%, -70%);
       -webkit-transition: all 0.4s ease;
       transition: all 0.4s ease; }
     .c-recomended-hotel-card .card-wrapper:hover .hotel-information {
@@ -22,13 +23,14 @@
   .c-recomended-hotel-card img {
     height: 100%;
     width: 100%;
-    border-radius: 10px; }
+    -o-object-fit: cover;
+    object-fit: cover; }
   .c-recomended-hotel-card .click-area {
     position: absolute;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
+    height: 100%;
+    width: 100%;
     z-index: 2;
     text-indent: -99999px; }
   .c-recomended-hotel-card .hotel-information {
@@ -53,9 +55,11 @@
     position: absolute;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    bottom: -45px;
     width: 70%;
-    left: 50px;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translate(-50%, -40%);
+    transform: translate(-50%, -40%);
     padding: 10px 20px;
     border: 1px white solid;
     background: transparent;

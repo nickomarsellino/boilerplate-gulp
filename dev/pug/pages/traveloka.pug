@@ -7,5 +7,33 @@ block head
 block body 
   .p-traveloka
     .container
+      h2 Traveloka recomend hotels
       .wrapper-card-list
+        -
+          listData = [
+            {
+              "id": "1",
+              "cardImage": "country-1.jpeg",
+              "availability": 2564,
+              "hotelOrigin": "Indonesia"
+            },
+            {
+              "id": "2",
+              "cardImage": "country-2.jpeg",
+              "availability": 5124,
+              "hotelOrigin": "Japan"
+            },
+            {
+              "id": "3",
+              "cardImage": "country-3.jpg",
+              "availability": 4254,
+              "hotelOrigin": "London"
+            },
+              {
+              "id": "4",
+              "cardImage": "country-4.jpeg",
+              "availability": 2654,
+              "hotelOrigin": "Brazil"
+            }
+          ]
         include ../components/recomended-hotel-card.pug

@@ -6,8 +6,8 @@ block head
 
 block body 
   .p-airbnb
-    h2 Air Bnb Card
-    .container
+    .container 
+      h2 Air Bnb Card
       .wrapper-card-list
         -
           listData = [
@@ -40,3 +40,5 @@ block body
             }
           ]
         include ../components/detail-card-review.pug 
+
+      p TEST
